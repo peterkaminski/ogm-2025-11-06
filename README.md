@@ -1,94 +1,49 @@
-# OGM 2025-11-06 Analysis
+# OGM 2025-11-06 Community Call
 
-This repository contains analysis and synthesis of the OGM (Open Global Mind) community call from Thursday, November 6, 2025.
-
-## Contents
-
-### Source Materials
-
-Located in `sources/`:
-- **Zoom transcript**: Full closed caption transcript from the meeting
-- **Chat log**: Complete Zoom chat with links and side conversations
-- **Gemini takes**: Initial AI-generated participant insights (CSV and MD)
-
-### Wiki Documentation
-
-The `wiki/` directory contains a comprehensive, interlinked markdown wiki with:
-
-#### Main Entry Point
-- **[[Index]]** (`wiki/Index.md`) - Start here for navigation
-
-#### Participant Pages (13)
-Individual pages for each participant with expanded insights beyond the Gemini takes:
-- Scott Moehring
-- Gil Friend
-- Alex Kladitis
-- Pete Kaminski
-- Kevin Jones
-- David Witzel
-- Klaus Mager
-- Jerry Michalski
-- Mike Nelson
-- Victoria (Spain)
-- Stacey Druss
-- Doug Breitbart
-- Rick Botelho
-
-#### Entity Pages
-- **Books and Publications** - All referenced works, articles, papers
-- **People Referenced** - Non-participants mentioned during call
-- **Organizations and Initiatives** - Companies, institutions, projects
-
-#### Theme & Concept Pages
-- AI Financial Bubble
-- Field of Sheaves (Pete's synthesis project)
-- Non-Local Consciousness
-- Remixability
-- Chat Thread: Curiosity Decline
-- And more...
-
-## Key Themes from the Call
-
-### Technology & AI
-- Agentic AI for document synthesis and software development
-- AI bias in news reporting (Chinese vs Western perspectives)
-- AI financial bubble concerns
-- Automated transcript de-identification
-
-### Consciousness & Perception
-- Non-local consciousness theories
-- GABA and neural filtering mechanisms
-- Psilocybin experiences and perception
-- Declining curiosity and attention
-
-### Systems & Society
-- Regenerative agriculture and environmental services revenue
-- Growth in living systems vs economics
-- Political shifts in Virginia 2025
-- Overstimulation and environmental neurodiversity
-
-### Tools & Practices
-- Tab groups discovery (life-changing for ADD management)
-- Remixability as creative philosophy
-- Field of sheaves knowledge synthesis
-
-## Wiki Features
-
-The wiki uses **[[Double Square Bracket Links]]** for rich interlinking between pages, making it easy to:
-- Navigate between related concepts
-- See connections across themes
-- Explore from multiple entry points
-
-## File Naming Convention
-
-Wiki files use human-readable names with proper capitalization and spaces (e.g., `Scott Moehring.md`, `AI Financial Bubble.md`) for better navigation and searchability.
-
-## Usage
-
-Browse the wiki starting from `wiki/Index.md`. Each page links to related concepts, participants, and themes using the `[[Page Title]]` syntax.
+**Thursday, November 6, 2025** • **~2 hours** • **Open Global Mind weekly call**
 
 ---
 
-**Call Date**: Thursday, November 6, 2025
-**Format**: First-Thursday check-in with protocol (silence between check-ins, no cross-talk until conversation mode)
-**Duration**: ~2 hours
+## About This Call
+
+A first-Thursday check-in call where 13 participants shared what "OGM-y" things they've been working on or thinking about. The call featured rich discussions on AI, consciousness, regenerative agriculture, financial bubbles, and the nature of curiosity - along with equally rich chat conversations.
+
+## Quick Navigation
+
+### 🎯 Start Here
+- **[[Concept Index]]** - All pages organized by category
+- **[[Details About This Wiki]]** - How this wiki was created, how to use it
+- **[[Work Log]]** - Meta-documentation of the creation process
+
+### 👥 Participants (13)
+[[Scott Moehring]] • [[Gil Friend]] • [[Alex Kladitis]] • [[Pete Kaminski]] • [[Kevin Jones]] • [[David Witzel]] • [[Klaus Mager]] • [[Jerry Michalski]] • [[Mike Nelson]] • [[Victoria (Spain)]] • [[Stacey Druss]] • [[Doug Breitbart]] • [[Rick Botelho]]
+
+### 🔥 Highlights
+
+**Jerry's psilocybin journey** and connections to non-local consciousness theories • **Doug's life-changing tab groups discovery** at age 69 • **Klaus's dual-revenue regenerative agriculture model** • **Pete's "Field of Sheaves"** AI-assisted framework synthesis • **Scott's remixability** inspired by Kevin MacLeod • **Alex discovering AI bias** in ChatGPT • **Mike's overstimulation** from multiple sources • **Victoria's observation** about curiosity decline • The rich **chat discussion about attention vs curiosity**
+
+### 📚 Major Themes
+
+**Technology & AI**: [[AI Bias and Perspectives]] • [[Agentic AI and Document Synthesis]] • [[AI Financial Bubble]] • [[Claude Code]] • [[Field of Sheaves]]
+
+**Consciousness**: [[Non-Local Consciousness]] • [[GABA and Filtering]] • [[Psilocybin and Perception]] • [[Noetic Science]]
+
+**Systems & Society**: [[Regenerative Agriculture]] • [[Growth in Living Systems]] • [[Political Shifts 2025]] • [[Environmental Neurodiversity]]
+
+**Tools & Insights**: [[Tab Groups Discovery]] • [[Remixability]] • [[Nelson's Law]] • [[Two Truths and a Lie]]
+
+### 💬 Chat Conversations
+[[Chat Thread - Curiosity Decline]] • [[Chat Thread - Regenerative Agriculture Resources]] • [[Chat Thread - AI Bubble Discussion]] • [[Chat Thread - Nelson's Law]]
+
+### 📖 Reference
+[[Books and Publications]] • [[People Referenced]] • [[Organizations and Initiatives]]
+
+---
+
+## About This Wiki
+
+**90 interlinked pages** documenting the call, chat conversations, and background on every topic mentioned. Created using [[Claude Code]] the same day as the call. See [[Details About This Wiki]] for full information.
+
+**Navigation**: Use `[[Double Square Bracket Links]]` to explore. Every page links to related concepts and back to this home page.
+
+**Source Materials**: Full transcript, chat log, and initial AI analysis available in `sources/` directory.
