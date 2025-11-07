@@ -6,6 +6,8 @@ Information about this wiki's creation, structure, and how to use it.
 
 ## What This Is
 
+_Also see [[README|Home]]._
+
 A comprehensive wiki documenting the OGM (Open Global Mind) community call from **Thursday, November 6, 2025**.
 
 **90 interlinked pages** covering:
