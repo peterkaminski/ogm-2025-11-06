@@ -16,8 +16,8 @@
   </button>
 {< /div >}
 
-Download a [zip file of
-all pages]()  
+Download a [zip file of  
+all pages](https://github.com/peterkaminski/ogm-2025-11-06/archive/refs/heads/main.zip)  
 for Obsidian or LLMs.
 
 **WORK IN PROGRESS:  
