@@ -8,6 +8,10 @@
 
 A first-Thursday check-in call where 13 participants shared what "OGM-y" things they've been working on or thinking about. The call featured rich discussions on AI, consciousness, regenerative agriculture, financial bubbles, and the nature of curiosity - along with equally rich chat conversations.
 
+## About This Wiki Website
+
+This paragraph was written by Peter Kaminski. The rest of this site was assembled by Claude Code, starting from the call transcript, call chat, and a few short summaries by Google Gemini. **There are certainly errors and omissions.** This is part of Pete's experiments in AI-driven summarization and expansion of topics. It is interesting, hopefully somewhat useful, but don't consider it a finished work.
+
 ## Quick Navigation
 
 ### 🎯 Start Here
