@@ -3,9 +3,9 @@
 {< div class="navlinks" >}
 - [[README|Home]]
 - [Search](/search.html)  
-- [[Glossary]]  
-- [[Index of Models]]  
-- [[Taxonomy Framework]]  
+- [[Concept Index]]  
+- [[Details About This Wiki]]  
+- [[Work Log]]  
 - [All Pages](/all-pages.html)  
 - [Recent Changes](/recent-pages.html)
 {< /div >}
