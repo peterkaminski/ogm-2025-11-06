@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiki Creation Process - Prompts and Key Decisions - OGM 2025-11-06</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//markpub-static/css/style.css">
+    <link rel="stylesheet" href="//markpub-static/css/custom.css">
+    <link rel="stylesheet" href="https://unpkg.com/bluesky-comments@0.9.0/dist/bluesky-comments.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
+    <script src="//lunr-index-1763047089.1034608.js"></script>
+    <script>var index = lunr.Index.load(lunr_index)</script>
+    
+    
+    <script src="//lunr-posts-1763047089.1034608.js"></script>
+    <script> function randomPageLink() { return "/"+lunr_posts[Math.floor(Math.random() * lunr_posts.length)].link; } </script>
+    
+  </head>
+<body>
+  <div id="header">
+    <span id="hamburger-btn"
+    class="hidden">&#9776;</span><a class="button is-light" id="header-link" href="//index.html">OGM 2025-11-06</a>
+  </div>
+
+  <div class="container" id="flex-container">
+    <div id="side-column">
+      <div>
+        <button id="hide-btn">Hide</button>
+        <button id="move-btn" class="hidden">Move to Sidebar</button>
+      </div>
+      <h3>Site Navigation</h3>
+<div class="navlinks">
+<ul>
+<li><a class="wikilink" href="//README.html">Home</a></li>
+<li><a href="//search.html">Search</a></li>
+<li><a class="wikilink" href="//Concept_Index.html">Concept Index</a></li>
+<li><a class="wikilink" href="//Details_About_This_Wiki.html">Details About This Wiki</a></li>
+<li><a class="wikilink" href="//Work_Log.html">Work Log</a></li>
+<li><a href="//all-pages.html">All Pages</a></li>
+<li><a href="//recent-pages.html">Recent Changes</a></li>
+</ul>
+</div>
+<div class="navlinks">
+  <button onclick="location.href=`${randomPageLink()}`">
+    Random Page
+  </button>
+</div>
+<p>Download a <a href="https://github.com/peterkaminski/ogm-2025-11-06/archive/refs/heads/main.zip">zip file of<br />
+all pages</a><br />
+for Obsidian or LLMs.</p>
+<p><strong>WORK IN PROGRESS:<br />
+PAGES NOT YET REVIEWED BY<br />
+HUMAN EXPERTS. VERIFY<br />
+CLAIMS AND CONSULT<br />
+ORIGINAL SOURCES FOR<br />
+AUTHORITATIVE INFORMATION.</strong></p>
+<hr />
+<p><a class="wikilink" href="//Contact_Peter_Kaminski.html">Contact Peter Kaminski</a></p>
+
+    </div>
+
+    <div id="main-column">
+      
+      <div> <!-- edit this page button -->
+	<p style="float:right; margin:.5em .5em
+	.5em"><a target="_blank" href="https://github.com/peterkaminski/ogm-2025-11-06/edit/main/Wiki Creation Process - Prompts and Key Decisions.md"
+	class="edit-this-page-button">Edit on GitHub</a></p>
+	<br clear="all">
+      </div> <!-- edit this page button -->
+      
+      <h1>Wiki Creation Process - Prompts and Key Decisions</h1>
+<p>This document captures the key prompts and decisions made during the creation of this comprehensive wiki from the OGM 2025-11-06 call. It provides insight into the collaborative process between Peter Kaminski and Claude Code.</p>
+<p><strong>Note</strong>: This document is reconstructed from the conversation summary and represents the key decision points rather than a complete transcript.</p>
+<hr />
+<h2>Phase 1: Initial Request</h2>
+<p><strong>Peter's Prompt:</strong></p>
+<blockquote>
+<p>"this project will be for analyzing and synthesizing text transcript and chat from a community call, OGM 2025-11-06."</p>
+</blockquote>
+<p><strong>Response</strong>: I explored the repository, found it was empty except for .git, and offered several approaches for how to proceed.</p>
+<hr />
+<h2>Phase 2: Getting Source Materials</h2>
+<p><strong>Peter's Prompt:</strong></p>
+<blockquote>
+<p>"i have the transcript and chat on my computer. what's the quickest way to get it into the repo?"</p>
+</blockquote>
+<p><strong>Response</strong>: I provided options for getting files into the repo.</p>
+<p><strong>Peter's Action:</strong></p>
+<blockquote>
+<p>"i've pushed them to main."</p>
+</blockquote>
+<p><strong>Discovery</strong>: The files included:</p>
+<ul>
+<li><code>gemini takes.csv</code> with 11 participants</li>
+<li><code>sources/2025-11-06 09.36.49 Jerry Michalski's Zoom Meeting/meeting_saved_closed_caption.txt</code> (38,085 tokens - very large!)</li>
+<li><code>sources/2025-11-06 09.36.49 Jerry Michalski's Zoom Meeting/meeting_saved_new_chat.txt</code></li>
+<li><code>sources/gemini-takes.md</code></li>
+</ul>
+<hr />
+<h2>Phase 3: Main Request - Comprehensive Wiki</h2>
+<p><strong>Peter's Prompt:</strong></p>
+<blockquote>
+<p>"comprehensive summary. i like the gemini take, and i think it stopped and didn't do as many people as it could have? also, there was a LOT of conversation in the chat, it would be nice to organize and summarize that. also, a list of people, books, orgs would be great. make the output a markdown wiki; use page titles as filenames (complete with capitalization and spaces, but obviously no forbidden filesystem chars) (append .md to the filename, obviously) and rich interlinking with <span class="incipient-wikilink">Double Square Bracket Links</span>."</p>
+</blockquote>
+<p><strong>Key Requirements Identified:</strong></p>
+<ul>
+<li>Comprehensive summary needed</li>
+<li>Gemini analysis was incomplete (11 participants vs actual 13)</li>
+<li>Organize and summarize extensive chat conversations</li>
+<li>Create lists of: people, books, organizations</li>
+<li>Format: Markdown wiki with <code>[[Double Square Bracket Links]]</code></li>
+<li>Filename convention: Proper capitalization and spaces (e.g., <code>Scott Moehring.md</code>)</li>
+</ul>
+<p><strong>Approach Taken:</strong></p>
+<ul>
+<li>Created 8-task todo list for systematic work</li>
+<li>Read transcript in chunks (exceeded 25,000 token limit)</li>
+<li>Found all 13 participants</li>
+<li>Created comprehensive wiki structure in <code>wiki/</code> directory</li>
+<li>Generated participant pages, chat thread syntheses, entity indexes</li>
+</ul>
+<p><strong>Initial Result</strong>: 23-page wiki with complete coverage</p>
+<p><strong>Peter's Action:</strong></p>
+<blockquote>
+<p>"i've merged the branch to main"</p>
+</blockquote>
+<hr />
+<h2>Phase 4: Orphan Pages</h2>
+<p><strong>Peter's Prompt:</strong></p>
+<blockquote>
+<p>"thanks, it's looking great! for each orphan page (linked but not created) -- create the page, put a short disclaimer at the top of each of those pages that this page was a topic raised but not covered in the call itself, and then a short but useful bit about the that topic."</p>
+</blockquote>
+<p><strong>Response</strong>:</p>
+<ul>
+<li>Found 67 orphan pages (linked but not created)</li>
+<li>Created all with consistent disclaimer format:
+<pre><code class="language-markdown">&gt; **Note**: This topic was mentioned during the OGM 2025-11-06 call
+&gt; in [context], but was not a main focus of discussion. This page
+&gt; provides background on the concept.
+</code></pre>
+</li>
+<li>Added useful content for each topic beyond just a stub</li>
+</ul>
+<p><strong>Categories of Orphan Pages Created:</strong></p>
+<ul>
+<li>Tools and technologies (Claude Code, Droid, Creative Commons)</li>
+<li>Organizations (Capgemini, Schumacher Institute, IETF)</li>
+<li>People referenced (Kevin MacLeod, Dan Brown, Michael Burry, etc.)</li>
+<li>Concepts (Environmental Neurodiversity, Revolutionary Legos, Nelson's Law)</li>
+<li>Systems thinking (Growth in Living Systems, Regenerative Economics)</li>
+</ul>
+<p><strong>Peter's Prompt:</strong></p>
+<blockquote>
+<p>"commit and push (should i keep asking you to do that? i'm not sure)"</p>
+</blockquote>
+<p><strong>Response</strong>: Explained workflow - I'll commit and push at appropriate times, don't need to ask each time.</p>
+<hr />
+<h2>Phase 5: Major Reorganization</h2>
+<p><strong>Peter's Prompt:</strong></p>
+<blockquote>
+<p>"okay, looking great! the 'home page' of the wiki shall be README.md. Also, move all the files in wiki/ to the root, and delete the empty wiki folder. integrated Index.md into README.md and have a nice overview / intro to the call, HOWEVER, we also need that page not to be overwhelming.</p>
+<p>we also need a new 'Concept Index' page that has links to all the other pages; that should be organized into categories and/or conceptual clusters.</p>
+<p>'AI Bias and Perspectives.md' is at the root already, but appears empty. (and not linked anywhere.) treat it like one of the non-call pages, unless its a dangling dupe, then we can delete it.</p>
+<p>lastly, figure out a way to add additional entries to Work Log, and add one for this increment of work.</p>
+<p>any questions?"</p>
+</blockquote>
+<h3>Decision Point 1: README Approach</h3>
+<p><strong>Options Presented:</strong></p>
+<ul>
+<li><strong>Option A</strong>: Brief, welcoming README with quick navigation + separate comprehensive page</li>
+<li><strong>Option B</strong>: Keep comprehensive README as-is</li>
+</ul>
+<p><strong>Peter's Choice:</strong></p>
+<blockquote>
+<p>"1. option A, and make a 'Details About This Wiki' page, does that sound okay?"</p>
+</blockquote>
+<p><strong>Decision</strong>: Create brief README.md + comprehensive "Details About This Wiki.md"</p>
+<h3>Decision Point 2: Concept Index Organization</h3>
+<p><strong>Options Presented:</strong></p>
+<ul>
+<li><strong>Option A</strong>: Use same categories as Index (Technology &amp; AI, Consciousness &amp; Perception, Systems &amp; Society, Tools &amp; Practices)</li>
+<li><strong>Option B</strong>: Different conceptual clustering</li>
+</ul>
+<p><strong>Peter's Choice:</strong></p>
+<blockquote>
+<p>"2. Option A"</p>
+</blockquote>
+<p><strong>Decision</strong>: Organize Concept Index using established categories plus additional ones for People, Organizations, Chat Threads, Meta</p>
+<h3>Decision Point 3: Work Log Entry Placement</h3>
+<p><strong>Options Presented:</strong></p>
+<ul>
+<li><strong>Top</strong>: Journal style (newest entries first)</li>
+<li><strong>Bottom</strong>: Chronological style (oldest to newest)</li>
+</ul>
+<p><strong>Peter's Choice:</strong></p>
+<blockquote>
+<p>"3. Top, journal style, with separation between entries."</p>
+</blockquote>
+<p><strong>Decision</strong>: Add new Phase 9 entry at top with separator line</p>
+<h3>Decision Point 4: AI Bias File</h3>
+<p><strong>Investigation Result</strong>: File exists in <code>wiki/</code> directory with content, not empty, not a duplicate. Moved with all other files to root.</p>
+<hr />
+<h2>Implementation Results</h2>
+<h3>New Structure Created</h3>
+<p><strong>README.md</strong> (New Home Page)</p>
+<ul>
+<li>Brief, welcoming entry point (~50 lines)</li>
+<li>Quick navigation to key sections</li>
+<li>Lists 13 participants with one-line summaries</li>
+<li>Major themes organized by category</li>
+<li>Links to chat threads and references</li>
+<li>Not overwhelming - points to deeper resources</li>
+</ul>
+<p><strong>Details About This Wiki.md</strong> (Comprehensive Documentation)</p>
+<ul>
+<li>Full wiki information (~350 lines)</li>
+<li>Creation process and tools used</li>
+<li>Structure and navigation strategies</li>
+<li>Page types and file naming conventions</li>
+<li>Statistics and features</li>
+<li>Tool recommendations (Obsidian, Foam)</li>
+<li>How to use and extend the wiki</li>
+<li>Credits and meta-information</li>
+</ul>
+<p><strong>Concept Index.md</strong> (Complete Navigation)</p>
+<ul>
+<li>All 90 pages organized into categories:
+<ul>
+<li>Participants (13)</li>
+<li>Chat Threads (4)</li>
+<li>Technology &amp; AI (16)</li>
+<li>Consciousness &amp; Perception (8)</li>
+<li>Systems &amp; Society (10)</li>
+<li>Tools &amp; Practices (14)</li>
+<li>Agriculture &amp; Food Systems (4)</li>
+<li>People Referenced (11)</li>
+<li>Organizations &amp; Initiatives (4)</li>
+<li>Reference Indexes (3)</li>
+<li>Meta &amp; Documentation (4)</li>
+<li>Other Concepts (3)</li>
+</ul>
+</li>
+<li>Brief descriptions for each entry</li>
+<li>Navigation tips</li>
+<li>Statistics summary</li>
+</ul>
+<h3>File Reorganization</h3>
+<ul>
+<li>Moved all 90 <code>.md</code> files from <code>wiki/</code> to root directory</li>
+<li>Removed empty <code>wiki/</code> folder</li>
+<li>Updated all <code>[[Index]]</code> links to <code>[[README]]</code> throughout</li>
+<li>Maintained all working <code>[[Wikilinks]]</code></li>
+<li>Preserved proper capitalization and spaces in filenames</li>
+</ul>
+<h3>Work Log Update</h3>
+<ul>
+<li>Added Phase 9 entry at top (journal style)</li>
+<li>Clear separator between phases (---)</li>
+<li>Documented reorganization process and results</li>
+</ul>
+<hr />
+<h2>Key Principles Established</h2>
+<h3>Filename Convention</h3>
+<ul>
+<li>Use exact page titles with spaces: <code>Scott Moehring.md</code></li>
+<li>Proper capitalization: <code>AI Financial Bubble.md</code></li>
+<li>No forbidden filesystem characters</li>
+<li>Append <code>.md</code> extension</li>
+</ul>
+<h3>Link Style</h3>
+<ul>
+<li><code>[[Double Square Bracket Links]]</code> throughout</li>
+<li>Rich cross-referencing between related concepts</li>
+<li>Every page links back to main navigation</li>
+</ul>
+<h3>Content Approach</h3>
+<ul>
+<li>Verbatim quotes from participants when possible</li>
+<li>Neutral tone on controversial topics</li>
+<li>Clear distinction between facts and speculation</li>
+<li>Useful content even for brief mentions</li>
+</ul>
+<h3>Organization Philosophy</h3>
+<ul>
+<li>Multiple entry points for different user needs</li>
+<li>Clear separation of concerns (entry vs documentation vs navigation)</li>
+<li>Not overwhelming at first glance</li>
+<li>Full depth available when needed</li>
+</ul>
+<hr />
+<h2>Technical Workflow</h2>
+<h3>Git Strategy</h3>
+<ul>
+<li>Feature branch: <code>claude/analyze-synthesize-text-011CUs7984yMf6YQBUS96Qbd</code></li>
+<li>Multiple commits for logical phases:
+<ol>
+<li>Initial 23-page wiki structure</li>
+<li>67 orphan pages with disclaimers</li>
+<li>Work Log documentation</li>
+<li>Major reorganization</li>
+</ol>
+</li>
+<li>Push to remote for Peter to review and merge</li>
+<li>Peter merged via PR and deleted remote branch</li>
+</ul>
+<h3>Challenges Overcome</h3>
+<ul>
+<li><strong>Transcript size</strong>: 38,085 tokens exceeded 25,000 token read limit
+<ul>
+<li>Solution: Read in chunks using offset/limit parameters</li>
+</ul>
+</li>
+<li><strong>Participant count</strong>: Gemini had 11, actual was 13
+<ul>
+<li>Solution: Careful full-transcript analysis</li>
+</ul>
+</li>
+<li><strong>Scale</strong>: 67 orphan pages beyond initial scope
+<ul>
+<li>Solution: Consistent disclaimer format + useful content</li>
+</ul>
+</li>
+<li><strong>Navigation complexity</strong>: 90 pages needed organization
+<ul>
+<li>Solution: Multiple complementary navigation tools</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2>Final Statistics</h2>
+<ul>
+<li><strong>90 total pages</strong></li>
+<li><strong>13 participant pages</strong> with full check-ins and chat contributions</li>
+<li><strong>4 chat thread syntheses</strong> capturing rich discussions</li>
+<li><strong>67 concept/background pages</strong> covering all mentioned topics</li>
+<li><strong>3 reference index pages</strong> (Books, People, Organizations)</li>
+<li><strong>3 meta pages</strong> (README, Concept Index, Details, Work Log, this page)</li>
+<li><strong>6,500+ lines</strong> of markdown documentation</li>
+<li><strong>Fully interlinked</strong> - no broken <code>[[Links]]</code></li>
+</ul>
+<hr />
+<h2>Meta Notes</h2>
+<p><strong>Created by</strong>: Claude Code (Anthropic's agentic AI assistant)
+<strong>Guided by</strong>: Peter Kaminski
+<strong>Date</strong>: November 6, 2025
+<strong>Session</strong>: Spanned multiple interactions with conversation continuation</p>
+<p>This document demonstrates:</p>
+<ul>
+<li>Collaborative human-AI knowledge work</li>
+<li>Iterative refinement based on user feedback</li>
+<li>Progressive enhancement of structure and organization</li>
+<li>Careful attention to user experience and navigation</li>
+</ul>
+<p>The wiki itself is a product of the processes it documents - AI-assisted synthesis, information organization, and thoughtful structure design.</p>
+<hr />
+<p>Back to <a class="wikilink" href="//README.html">README</a></p>
+
+      
+    </div>
+  </div>
+  
+  <footer class="footer">
+  <div class="content has-text-centered">
+    
+    <div><strong>OGM 2025-11-06</strong> by Peter Kaminski.</div>
+    
+    
+    <div>Central repository at <a href="https://github.com/peterkaminski/ogm-2025-11-06/">ogm-2025-11-06</a>.</div>
+    
+    
+    <div>Licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</div>
+    
+    <div><em>Site last updated on Thursday, November 13, 2025 at 15:18 UTC.</em></div>
+  </div>
+</footer>
+</body>
+</html>
